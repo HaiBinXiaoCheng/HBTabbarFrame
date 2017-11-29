@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HBTabBarControllerMange.h"
+#import "HBFrameConfig.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //设置跟试图
+    self.window.rootViewController = [HBTabBarControllerMange configTabBarController];
+    [self.window makeKeyAndVisible];
+    [[HBFrameConfig shareInstance] applicationDidFinishLaunchingWithOptions:launchOptions];
     return YES;
 }
 

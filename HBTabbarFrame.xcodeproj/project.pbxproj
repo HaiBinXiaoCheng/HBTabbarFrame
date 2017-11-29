@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5D8E02CEED91E0D32DC33F /* libPods-HBTabbarFrame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB80A6841BA9C3EA5B6D019 /* libPods-HBTabbarFrame.a */; };
+		4D3BC29A1FCE601B00D22FE3 /* HBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2991FCE601B00D22FE3 /* HBTabBarController.m */; };
+		4D3BC29D1FCE602F00D22FE3 /* HBTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC29C1FCE602F00D22FE3 /* HBTabBar.m */; };
+		4D3BC2A01FCE619000D22FE3 /* HBTabBarControllerMange.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC29F1FCE619000D22FE3 /* HBTabBarControllerMange.m */; };
+		4D3BC2A31FCE61D600D22FE3 /* HBTabBarItemProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2A21FCE61D600D22FE3 /* HBTabBarItemProperty.m */; };
+		4D3BC2A61FCE62D500D22FE3 /* HBFrameConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2A51FCE62D500D22FE3 /* HBFrameConfig.m */; };
+		4D3BC2A81FCE64CB00D22FE3 /* HBTabBarConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D3BC2A71FCE64CB00D22FE3 /* HBTabBarConfig.plist */; };
+		4D3BC2AB1FCE9B4000D22FE3 /* HBTabBarCenterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2AA1FCE9B4000D22FE3 /* HBTabBarCenterItem.m */; };
+		4D3BC2B01FCEA2C600D22FE3 /* HBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2AD1FCEA2C600D22FE3 /* HBViewController.m */; };
+		4D3BC2B11FCEA2C600D22FE3 /* HBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2AF1FCEA2C600D22FE3 /* HBNavigationController.m */; };
+		4D3BC2B61FCEA2DC00D22FE3 /* HBTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2B21FCEA2DC00D22FE3 /* HBTestViewController.m */; };
+		4D3BC2B71FCEA2DC00D22FE3 /* HBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2B31FCEA2DC00D22FE3 /* HBMainViewController.m */; };
+		4D3BC2BA1FCEA2EF00D22FE3 /* HBMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3BC2B91FCEA2EF00D22FE3 /* HBMeViewController.m */; };
 		4DAF23E21FC5639F00906FDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF23E11FC5639F00906FDA /* AppDelegate.m */; };
-		4DAF23E51FC5639F00906FDA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF23E41FC5639F00906FDA /* ViewController.m */; };
-		4DAF23E81FC5639F00906FDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAF23E61FC5639F00906FDA /* Main.storyboard */; };
 		4DAF23EA1FC5639F00906FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DAF23E91FC5639F00906FDA /* Assets.xcassets */; };
 		4DAF23ED1FC5639F00906FDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DAF23EB1FC5639F00906FDA /* LaunchScreen.storyboard */; };
 		4DAF23F01FC5639F00906FDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAF23EF1FC5639F00906FDA /* main.m */; };
@@ -35,12 +46,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB80A6841BA9C3EA5B6D019 /* libPods-HBTabbarFrame.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBTabbarFrame.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		198585B2357C9B023C157D0D /* libPods-HBTabbarFrameTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBTabbarFrameTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D297AF56F4B815BE9D2DFCD /* Pods-HBTabbarFrame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBTabbarFrame.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBTabbarFrame/Pods-HBTabbarFrame.release.xcconfig"; sourceTree = "<group>"; };
+		4D3BC2981FCE601B00D22FE3 /* HBTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTabBarController.h; sourceTree = "<group>"; };
+		4D3BC2991FCE601B00D22FE3 /* HBTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTabBarController.m; sourceTree = "<group>"; };
+		4D3BC29B1FCE602F00D22FE3 /* HBTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTabBar.h; sourceTree = "<group>"; };
+		4D3BC29C1FCE602F00D22FE3 /* HBTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTabBar.m; sourceTree = "<group>"; };
+		4D3BC29E1FCE619000D22FE3 /* HBTabBarControllerMange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTabBarControllerMange.h; sourceTree = "<group>"; };
+		4D3BC29F1FCE619000D22FE3 /* HBTabBarControllerMange.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTabBarControllerMange.m; sourceTree = "<group>"; };
+		4D3BC2A11FCE61D600D22FE3 /* HBTabBarItemProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTabBarItemProperty.h; sourceTree = "<group>"; };
+		4D3BC2A21FCE61D600D22FE3 /* HBTabBarItemProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTabBarItemProperty.m; sourceTree = "<group>"; };
+		4D3BC2A41FCE62D500D22FE3 /* HBFrameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBFrameConfig.h; sourceTree = "<group>"; };
+		4D3BC2A51FCE62D500D22FE3 /* HBFrameConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBFrameConfig.m; sourceTree = "<group>"; };
+		4D3BC2A71FCE64CB00D22FE3 /* HBTabBarConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HBTabBarConfig.plist; sourceTree = "<group>"; };
+		4D3BC2A91FCE9B4000D22FE3 /* HBTabBarCenterItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBTabBarCenterItem.h; sourceTree = "<group>"; };
+		4D3BC2AA1FCE9B4000D22FE3 /* HBTabBarCenterItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTabBarCenterItem.m; sourceTree = "<group>"; };
+		4D3BC2AC1FCEA2C600D22FE3 /* HBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBViewController.h; sourceTree = "<group>"; };
+		4D3BC2AD1FCEA2C600D22FE3 /* HBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBViewController.m; sourceTree = "<group>"; };
+		4D3BC2AE1FCEA2C600D22FE3 /* HBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNavigationController.h; sourceTree = "<group>"; };
+		4D3BC2AF1FCEA2C600D22FE3 /* HBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNavigationController.m; sourceTree = "<group>"; };
+		4D3BC2B21FCEA2DC00D22FE3 /* HBTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBTestViewController.m; sourceTree = "<group>"; };
+		4D3BC2B31FCEA2DC00D22FE3 /* HBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBMainViewController.m; sourceTree = "<group>"; };
+		4D3BC2B41FCEA2DC00D22FE3 /* HBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMainViewController.h; sourceTree = "<group>"; };
+		4D3BC2B51FCEA2DC00D22FE3 /* HBTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBTestViewController.h; sourceTree = "<group>"; };
+		4D3BC2B81FCEA2EF00D22FE3 /* HBMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBMeViewController.h; sourceTree = "<group>"; };
+		4D3BC2B91FCEA2EF00D22FE3 /* HBMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBMeViewController.m; sourceTree = "<group>"; };
 		4DAF23DD1FC5639F00906FDA /* HBTabbarFrame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBTabbarFrame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAF23E01FC5639F00906FDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DAF23E11FC5639F00906FDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DAF23E31FC5639F00906FDA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4DAF23E41FC5639F00906FDA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4DAF23E71FC5639F00906FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DAF23E91FC5639F00906FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DAF23EC1FC5639F00906FDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DAF23EE1FC5639F00906FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +85,8 @@
 		4DAF24001FC563A000906FDA /* HBTabbarFrameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HBTabbarFrameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DAF24041FC563A000906FDA /* HBTabbarFrameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBTabbarFrameUITests.m; sourceTree = "<group>"; };
 		4DAF24061FC563A000906FDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		878C245B243AF2F1E5C8B64D /* Pods-HBTabbarFrame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBTabbarFrame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBTabbarFrame/Pods-HBTabbarFrame.debug.xcconfig"; sourceTree = "<group>"; };
+		B231B9E7341ED12CE4D6DEB9 /* libPods-HBTabbarFrameUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBTabbarFrameUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5D8E02CEED91E0D32DC33F /* libPods-HBTabbarFrame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +115,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12CACC17D04753CB07C33F85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BB80A6841BA9C3EA5B6D019 /* libPods-HBTabbarFrame.a */,
+				198585B2357C9B023C157D0D /* libPods-HBTabbarFrameTests.a */,
+				B231B9E7341ED12CE4D6DEB9 /* libPods-HBTabbarFrameUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D0904901FC67FAC003AB731 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4D0904911FC67FAC003AB731 /* Controllers */,
+				4D0904921FC67FAC003AB731 /* Models */,
+				4D0904931FC67FAC003AB731 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4D0904911FC67FAC003AB731 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BC2B41FCEA2DC00D22FE3 /* HBMainViewController.h */,
+				4D3BC2B31FCEA2DC00D22FE3 /* HBMainViewController.m */,
+				4D3BC2B51FCEA2DC00D22FE3 /* HBTestViewController.h */,
+				4D3BC2B21FCEA2DC00D22FE3 /* HBTestViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D0904921FC67FAC003AB731 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D0904931FC67FAC003AB731 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D0904941FC67FAC003AB731 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				4D0904951FC67FAC003AB731 /* Controllers */,
+				4D0904961FC67FAC003AB731 /* Models */,
+				4D0904971FC67FAC003AB731 /* Views */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		4D0904951FC67FAC003AB731 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BC2B81FCEA2EF00D22FE3 /* HBMeViewController.h */,
+				4D3BC2B91FCEA2EF00D22FE3 /* HBMeViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D0904961FC67FAC003AB731 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4D0904971FC67FAC003AB731 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D0904A11FC7C013003AB731 /* ThirdParties */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParties;
+			sourceTree = "<group>";
+		};
 		4DAF23D41FC5639F00906FDA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +207,8 @@
 				4DAF23F81FC563A000906FDA /* HBTabbarFrameTests */,
 				4DAF24031FC563A000906FDA /* HBTabbarFrameUITests */,
 				4DAF23DE1FC5639F00906FDA /* Products */,
+				4EF897C7B69FDFDE24B2EF21 /* Pods */,
+				12CACC17D04753CB07C33F85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +227,11 @@
 			children = (
 				4DAF23E01FC5639F00906FDA /* AppDelegate.h */,
 				4DAF23E11FC5639F00906FDA /* AppDelegate.m */,
-				4DAF23E31FC5639F00906FDA /* ViewController.h */,
-				4DAF23E41FC5639F00906FDA /* ViewController.m */,
-				4DAF23E61FC5639F00906FDA /* Main.storyboard */,
 				4DAF23E91FC5639F00906FDA /* Assets.xcassets */,
 				4DAF23EB1FC5639F00906FDA /* LaunchScreen.storyboard */,
 				4DAF23EE1FC5639F00906FDA /* Info.plist */,
 				4DAF23EF1FC5639F00906FDA /* main.m */,
+				4DAF24121FC58A3700906FDA /* Classes */,
 			);
 			path = HBTabbarFrame;
 			sourceTree = "<group>";
@@ -132,6 +254,114 @@
 			path = HBTabbarFrameUITests;
 			sourceTree = "<group>";
 		};
+		4DAF24121FC58A3700906FDA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4DAF24131FC58A3700906FDA /* BaseFramework */,
+				4DAF24171FC58A3700906FDA /* Bussiness */,
+				4DAF24181FC58A3700906FDA /* CustomKit */,
+				4DAF241B1FC58A3700906FDA /* CustomUtils */,
+				4DAF241C1FC58A3700906FDA /* MiddleWare */,
+				4D0904A11FC7C013003AB731 /* ThirdParties */,
+				4DAF24201FC58A3700906FDA /* RootViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4DAF24131FC58A3700906FDA /* BaseFramework */ = {
+			isa = PBXGroup;
+			children = (
+				4DAF24141FC58A3700906FDA /* HBCommonRoot */,
+				4DAF24151FC58A3700906FDA /* HBGlobalConfig */,
+				4DAF24161FC58A3700906FDA /* HBLocalData */,
+			);
+			path = BaseFramework;
+			sourceTree = "<group>";
+		};
+		4DAF24141FC58A3700906FDA /* HBCommonRoot */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BC2AE1FCEA2C600D22FE3 /* HBNavigationController.h */,
+				4D3BC2AF1FCEA2C600D22FE3 /* HBNavigationController.m */,
+				4D3BC2AC1FCEA2C600D22FE3 /* HBViewController.h */,
+				4D3BC2AD1FCEA2C600D22FE3 /* HBViewController.m */,
+			);
+			path = HBCommonRoot;
+			sourceTree = "<group>";
+		};
+		4DAF24151FC58A3700906FDA /* HBGlobalConfig */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BC2A41FCE62D500D22FE3 /* HBFrameConfig.h */,
+				4D3BC2A51FCE62D500D22FE3 /* HBFrameConfig.m */,
+			);
+			path = HBGlobalConfig;
+			sourceTree = "<group>";
+		};
+		4DAF24161FC58A3700906FDA /* HBLocalData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HBLocalData;
+			sourceTree = "<group>";
+		};
+		4DAF24171FC58A3700906FDA /* Bussiness */ = {
+			isa = PBXGroup;
+			children = (
+				4D0904901FC67FAC003AB731 /* Main */,
+				4D0904941FC67FAC003AB731 /* Me */,
+			);
+			path = Bussiness;
+			sourceTree = "<group>";
+		};
+		4DAF24181FC58A3700906FDA /* CustomKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomKit;
+			sourceTree = "<group>";
+		};
+		4DAF241B1FC58A3700906FDA /* CustomUtils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomUtils;
+			sourceTree = "<group>";
+		};
+		4DAF241C1FC58A3700906FDA /* MiddleWare */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MiddleWare;
+			sourceTree = "<group>";
+		};
+		4DAF24201FC58A3700906FDA /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D3BC2A71FCE64CB00D22FE3 /* HBTabBarConfig.plist */,
+				4D3BC2981FCE601B00D22FE3 /* HBTabBarController.h */,
+				4D3BC2991FCE601B00D22FE3 /* HBTabBarController.m */,
+				4D3BC29B1FCE602F00D22FE3 /* HBTabBar.h */,
+				4D3BC29C1FCE602F00D22FE3 /* HBTabBar.m */,
+				4D3BC2A91FCE9B4000D22FE3 /* HBTabBarCenterItem.h */,
+				4D3BC2AA1FCE9B4000D22FE3 /* HBTabBarCenterItem.m */,
+				4D3BC29E1FCE619000D22FE3 /* HBTabBarControllerMange.h */,
+				4D3BC29F1FCE619000D22FE3 /* HBTabBarControllerMange.m */,
+				4D3BC2A11FCE61D600D22FE3 /* HBTabBarItemProperty.h */,
+				4D3BC2A21FCE61D600D22FE3 /* HBTabBarItemProperty.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		4EF897C7B69FDFDE24B2EF21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878C245B243AF2F1E5C8B64D /* Pods-HBTabbarFrame.debug.xcconfig */,
+				4D297AF56F4B815BE9D2DFCD /* Pods-HBTabbarFrame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +369,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DAF24091FC563A000906FDA /* Build configuration list for PBXNativeTarget "HBTabbarFrame" */;
 			buildPhases = (
+				2230FFE9DAFDABD259FA537E /* [CP] Check Pods Manifest.lock */,
 				4DAF23D91FC5639F00906FDA /* Sources */,
 				4DAF23DA1FC5639F00906FDA /* Frameworks */,
 				4DAF23DB1FC5639F00906FDA /* Resources */,
+				293E9476E7199ED1E19F19B8 /* [CP] Embed Pods Frameworks */,
+				98C1B727A47087F93C3B7A92 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,9 +471,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3BC2A81FCE64CB00D22FE3 /* HBTabBarConfig.plist in Resources */,
 				4DAF23ED1FC5639F00906FDA /* LaunchScreen.storyboard in Resources */,
 				4DAF23EA1FC5639F00906FDA /* Assets.xcassets in Resources */,
-				4DAF23E81FC5639F00906FDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +493,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2230FFE9DAFDABD259FA537E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HBTabbarFrame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		293E9476E7199ED1E19F19B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBTabbarFrame/Pods-HBTabbarFrame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98C1B727A47087F93C3B7A92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HBTabbarFrame/Pods-HBTabbarFrame-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBTabbarFrame/Pods-HBTabbarFrame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DAF23D91FC5639F00906FDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DAF23E51FC5639F00906FDA /* ViewController.m in Sources */,
+				4D3BC2B01FCEA2C600D22FE3 /* HBViewController.m in Sources */,
+				4D3BC2A61FCE62D500D22FE3 /* HBFrameConfig.m in Sources */,
+				4D3BC2BA1FCEA2EF00D22FE3 /* HBMeViewController.m in Sources */,
+				4D3BC29A1FCE601B00D22FE3 /* HBTabBarController.m in Sources */,
 				4DAF23F01FC5639F00906FDA /* main.m in Sources */,
 				4DAF23E21FC5639F00906FDA /* AppDelegate.m in Sources */,
+				4D3BC2B11FCEA2C600D22FE3 /* HBNavigationController.m in Sources */,
+				4D3BC29D1FCE602F00D22FE3 /* HBTabBar.m in Sources */,
+				4D3BC2B61FCEA2DC00D22FE3 /* HBTestViewController.m in Sources */,
+				4D3BC2AB1FCE9B4000D22FE3 /* HBTabBarCenterItem.m in Sources */,
+				4D3BC2A01FCE619000D22FE3 /* HBTabBarControllerMange.m in Sources */,
+				4D3BC2A31FCE61D600D22FE3 /* HBTabBarItemProperty.m in Sources */,
+				4D3BC2B71FCEA2DC00D22FE3 /* HBMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +600,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4DAF23E61FC5639F00906FDA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DAF23E71FC5639F00906FDA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4DAF23EB1FC5639F00906FDA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -370,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -419,7 +708,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -428,29 +717,33 @@
 		};
 		4DAF240A1FC563A000906FDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878C245B243AF2F1E5C8B64D /* Pods-HBTabbarFrame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8FEZHZ57F;
 				INFOPLIST_FILE = HBTabbarFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HB.HBTabbarFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4DAF240B1FC563A000906FDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D297AF56F4B815BE9D2DFCD /* Pods-HBTabbarFrame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8FEZHZ57F;
 				INFOPLIST_FILE = HBTabbarFrame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HB.HBTabbarFrame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
