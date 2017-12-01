@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "HBNetwork.h"
-//#import "HBHUD.h"
+#import "HBNetwork.h"
+#import "HBHUD.h"
 
 @interface HBViewController : UIViewController
 
-//@property (nonatomic, strong)   HBNetwork *network;
-//@property (nonatomic, strong)   HBHUD     *HUD;
+@property (nonatomic, strong)   HBNetwork *network;
+@property (nonatomic, strong)   HBHUD     *HUD;
 
 @end

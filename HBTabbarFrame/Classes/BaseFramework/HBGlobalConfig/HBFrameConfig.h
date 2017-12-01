@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HBTabBarController.h"
+#import "HBNetwork.h"
+#import "HBHUD.h"
+#import "HBViewController.h"
 
 @interface HBFrameConfig : NSObject
 
@@ -16,6 +20,12 @@
  @return 实例
  */
 + (HBFrameConfig *)shareInstance;
+
+@property (nonatomic, strong)   UIWindow                  *window;
+@property (nonatomic, strong)   HBTabBarController        *tabbarVC;
+@property (nonatomic, strong)   HBNetwork                 *globalNet;
+@property (nonatomic, strong)   HBHUD                     *globalHUD;
+@property (nonatomic, strong)   HBViewController          *HBPresentingVC;
 
 /**
  APP开始加载,对应APPDelegate的第一个

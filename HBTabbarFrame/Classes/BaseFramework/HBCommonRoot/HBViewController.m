@@ -33,19 +33,19 @@
 //    return _title ? : @"";
 //}
 
-//- (HBNetwork *)network {
-//    if (!_network) {
-//        _network = [[HBNetwork alloc] init];
-//    }
-//    return _network;
-//}
-//
-//- (HBHUD *)HUD {
-//    if (!_HUD) {
-//        _HUD = [[HBHUD alloc] initWithContainerView:self.view];
-//    }
-//    return _HUD;
-//}
+- (HBNetwork *)network {
+    if (!_network) {
+        _network = [[HBNetwork alloc] init];
+    }
+    return _network;
+}
+
+- (HBHUD *)HUD {
+    if (!_HUD) {
+        _HUD = [[HBHUD alloc] initWithContainerView:self.view];
+    }
+    return _HUD;
+}
 
 //- (UILabel *)titleLabel {
 //    if (!_titleLabel) {
