@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    //设置跟试图
+    //设置根试图
     [HBFrameConfig shareInstance].window = self.window;
     [[HBFrameConfig shareInstance] applicationDidFinishLaunchingWithOptions:launchOptions];
     [self.window makeKeyAndVisible];

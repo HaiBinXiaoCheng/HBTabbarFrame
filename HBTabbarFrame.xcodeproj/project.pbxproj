@@ -316,16 +316,16 @@
 		FBECC1AB1FD13F3E008FFB87 /* CustomKit */ = {
 			isa = PBXGroup;
 			children = (
-				FBECC1AC1FD13F3E008FFB87 /* NSString+Tools.m */,
-				FBECC1AD1FD13F3E008FFB87 /* UIColor+Hex.m */,
-				FBECC1AE1FD13F3E008FFB87 /* UIView+Frame.m */,
-				FBECC1AF1FD13F3E008FFB87 /* NSDateFormatter+singleton.m */,
 				FBECC1B01FD13F3E008FFB87 /* NSObject+Help.h */,
-				FBECC1B11FD13F3E008FFB87 /* NSString+Tools.h */,
-				FBECC1B21FD13F3E008FFB87 /* UIColor+Hex.h */,
 				FBECC1B31FD13F3E008FFB87 /* NSObject+Help.m */,
-				FBECC1B41FD13F3E008FFB87 /* NSDateFormatter+singleton.h */,
+				FBECC1B11FD13F3E008FFB87 /* NSString+Tools.h */,
+				FBECC1AC1FD13F3E008FFB87 /* NSString+Tools.m */,
+				FBECC1B21FD13F3E008FFB87 /* UIColor+Hex.h */,
+				FBECC1AD1FD13F3E008FFB87 /* UIColor+Hex.m */,
 				FBECC1B51FD13F3E008FFB87 /* UIView+Frame.h */,
+				FBECC1AE1FD13F3E008FFB87 /* UIView+Frame.m */,
+				FBECC1B41FD13F3E008FFB87 /* NSDateFormatter+singleton.h */,
+				FBECC1AF1FD13F3E008FFB87 /* NSDateFormatter+singleton.m */,
 			);
 			path = CustomKit;
 			sourceTree = "<group>";
@@ -410,17 +410,17 @@
 		FBECC1CD1FD13F3E008FFB87 /* RootViewController */ = {
 			isa = PBXGroup;
 			children = (
-				FBECC1CE1FD13F3E008FFB87 /* HBTabBarCenterItem.h */,
-				FBECC1CF1FD13F3E008FFB87 /* HBTabBar.h */,
-				FBECC1D01FD13F3E008FFB87 /* HBTabBarItemProperty.m */,
-				FBECC1D11FD13F3E008FFB87 /* HBTabBarController.m */,
-				FBECC1D21FD13F3E008FFB87 /* HBTabBarControllerMange.m */,
 				FBECC1D31FD13F3E008FFB87 /* HBTabBarConfig.plist */,
+				FBECC1D71FD13F3E008FFB87 /* HBTabBarController.h */,
+				FBECC1D11FD13F3E008FFB87 /* HBTabBarController.m */,
+				FBECC1CF1FD13F3E008FFB87 /* HBTabBar.h */,
+				FBECC1D61FD13F3E008FFB87 /* HBTabBar.m */,
+				FBECC1CE1FD13F3E008FFB87 /* HBTabBarCenterItem.h */,
 				FBECC1D41FD13F3E008FFB87 /* HBTabBarCenterItem.m */,
 				FBECC1D51FD13F3E008FFB87 /* HBTabBarItemProperty.h */,
-				FBECC1D61FD13F3E008FFB87 /* HBTabBar.m */,
-				FBECC1D71FD13F3E008FFB87 /* HBTabBarController.h */,
+				FBECC1D01FD13F3E008FFB87 /* HBTabBarItemProperty.m */,
 				FBECC1D81FD13F3E008FFB87 /* HBTabBarControllerMange.h */,
+				FBECC1D21FD13F3E008FFB87 /* HBTabBarControllerMange.m */,
 			);
 			path = RootViewController;
 			sourceTree = "<group>";
@@ -800,6 +800,7 @@
 			baseConfigurationReference = 878C245B243AF2F1E5C8B64D /* Pods-HBTabbarFrame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8FEZHZ57F;
 				INFOPLIST_FILE = HBTabbarFrame/Info.plist;
@@ -816,6 +817,7 @@
 			baseConfigurationReference = 4D297AF56F4B815BE9D2DFCD /* Pods-HBTabbarFrame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8FEZHZ57F;
 				INFOPLIST_FILE = HBTabbarFrame/Info.plist;

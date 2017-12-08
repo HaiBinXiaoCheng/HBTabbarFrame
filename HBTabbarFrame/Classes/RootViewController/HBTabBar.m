@@ -41,6 +41,16 @@
     return self;
 }
 
+//解决iPhone X中push的时候因为隐藏Tabbar的原因,tabBar上跳的问题
+#pragma mark - Override Methods
+- (void)setFrame:(CGRect)frame
+{
+    if (self.superview && CGRectGetMaxY(self.superview.bounds) !=CGRectGetMaxY(frame)) {
+        frame.origin.y =CGRectGetHeight(self.superview.bounds) -CGRectGetHeight(frame);
+    }
+    [super setFrame:frame];
+}
+
 - (void)setUpSubViews {
     //如果不含有中间凸出按钮则不添加
     if (!_hasCenterItem) {
@@ -122,6 +132,8 @@
     }
 }
 
+
+
 /**
  更换原本TabBar上丑陋的背景与分割线
  
@@ -133,13 +145,10 @@
     [self setShadowImage:[UIImage new]];
     [self setBackgroundImage:[[UIImage alloc]init]];
     //大背景
-    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0,0,self.frame.size.width,self.frame.size.height)];
-    //背景色
-    bgView.backgroundColor = bgColor;
-    UIImageView *lineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -6, bgView.frame.size.width, 6)];
+    self.backgroundColor = bgColor;
+    UIImageView *lineImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, -6, self.frame.size.width, 6)];
     lineImageView.image = shaowImage;//;
-    [bgView addSubview:lineImageView];
-    [self insertSubview:bgView atIndex:0];
+    [self insertSubview:lineImageView atIndex:0];
 }
 
 
