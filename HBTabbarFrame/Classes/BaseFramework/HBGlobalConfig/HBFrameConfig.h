@@ -10,7 +10,7 @@
 #import "HBTabBarController.h"
 #import "HBNetwork.h"
 #import "HBHUD.h"
-#import "HBViewController.h"
+#import "HBNavigationController.h"
 
 @interface HBFrameConfig : NSObject
 
@@ -25,7 +25,8 @@
 @property (nonatomic, strong)   HBTabBarController        *tabbarVC;
 @property (nonatomic, strong)   HBNetwork                 *globalNet;
 @property (nonatomic, strong)   HBHUD                     *globalHUD;
-@property (nonatomic, strong)   HBViewController          *HBPresentingVC;
+@property (nonatomic, strong)   UIViewController          *HBPresentingVC;
+@property (nonatomic, strong)   HBNavigationController    *HBNavi;
 
 /**
  APP开始加载,对应APPDelegate的第一个

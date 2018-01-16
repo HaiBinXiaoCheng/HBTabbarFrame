@@ -388,9 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				FBECC1C31FD13F3E008FFB87 /* HBDefines.h */,
-				FBECC1C41FD13F3E008FFB87 /* HBPreferences.h */,
-				FBECC1C51FD13F3E008FFB87 /* HBFrameConfig.m */,
 				FBECC1C61FD13F3E008FFB87 /* HBFrameConfig.h */,
+				FBECC1C51FD13F3E008FFB87 /* HBFrameConfig.m */,
+				FBECC1C41FD13F3E008FFB87 /* HBPreferences.h */,
 				FBECC1C71FD13F3E008FFB87 /* HBPreferences.m */,
 			);
 			path = HBGlobalConfig;
@@ -399,9 +399,9 @@
 		FBECC1C81FD13F3E008FFB87 /* HBCommonRoot */ = {
 			isa = PBXGroup;
 			children = (
+				FBECC1CB1FD13F3E008FFB87 /* HBNavigationController.h */,
 				FBECC1C91FD13F3E008FFB87 /* HBNavigationController.m */,
 				FBECC1CA1FD13F3E008FFB87 /* HBViewController.h */,
-				FBECC1CB1FD13F3E008FFB87 /* HBNavigationController.h */,
 				FBECC1CC1FD13F3E008FFB87 /* HBViewController.m */,
 			);
 			path = HBCommonRoot;

@@ -9,6 +9,7 @@
 #import "HBFrameConfig.h"
 #import "HBTabBarControllerMange.h"
 #import "HBDefines.h"
+#import "HBViewController.h"
 
 static HBFrameConfig *shareInstance = nil;
 
@@ -35,8 +36,9 @@ static HBFrameConfig *shareInstance = nil;
 
 - (HBNetwork *)globalNet {
     if (!_globalNet) {
-        if ([self HBPresentingVC] && [self HBPresentingVC].network) {
-            _globalNet = [self HBPresentingVC].network;
+        HBViewController *presentingVC = (HBViewController *)[self HBPresentingVC];
+        if (presentingVC && [presentingVC isKindOfClass:[HBViewController class]] && presentingVC.network) {
+            _globalNet = presentingVC.network;
         }else {
             _globalNet = [[HBNetwork alloc] init];
         }
@@ -52,8 +54,9 @@ static HBFrameConfig *shareInstance = nil;
 - (HBHUD *)globalHUD {
     
     if (!_globalHUD) {
-        if ([self HBPresentingVC] && [self HBPresentingVC].HUD) {
-            _globalHUD = [self HBPresentingVC].HUD;
+        HBViewController *presentingVC = (HBViewController *)[self HBPresentingVC];
+        if (presentingVC && [presentingVC isKindOfClass:[HBViewController class]] && presentingVC.HUD) {
+            _globalHUD = presentingVC.HUD;
         }else {
             _globalHUD = [[HBHUD alloc] init];
         }
@@ -62,7 +65,7 @@ static HBFrameConfig *shareInstance = nil;
 }
 
 //获取到当前控制器
-- (HBViewController *)HBPresentingVC {
+- (UIViewController *)HBPresentingVC {
     
     UIWindow * window = kKEY_WINDOW;
     if (window.windowLevel != UIWindowLevelNormal){
@@ -85,11 +88,14 @@ static HBFrameConfig *shareInstance = nil;
     if ([result isKindOfClass:[UINavigationController class]]) {
         result = [(UINavigationController *)result visibleViewController];
     }
-    NSAssert([result isKindOfClass:[HBViewController class]], @"所有控制器都要继承与基类,检查代码");
-    if ([result isKindOfClass:[HBViewController class]]) {
-        return (HBViewController *)result;
-    }
-    return nil;
+    NSAssert([result isKindOfClass:[HBViewController class]], @"所有从这里走出去的控制器控都要继承基类HBViewController,检查代码后重试");
+    return result;
+}
+//获取当前页面的导航栏,少用,多用self.navi
+- (HBNavigationController *)HBNavi
+{
+    UINavigationController *navi = [self HBPresentingVC].navigationController;
+    return (HBNavigationController *)navi;
 }
 
 @end
