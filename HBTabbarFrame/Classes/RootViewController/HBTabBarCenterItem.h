@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HBTabBarCenterItem : UIView
+@interface HBTabBarCenterItem : UIButton
+
+/**
+ 初始化
+ 
+ @return 自定义中间按钮
+ */
++ (instancetype)initializeTabBarCenterItem;
 
 @end

@@ -7,12 +7,13 @@
 //
 
 #import "HBTabBar.h"
+#import "HBTabBarCenterItem.h"
 
 @interface HBTabBar ()
 
 @property (nonatomic) HBTabBarUIType type;
 @property (nonatomic) BOOL hasCenterItem;
-@property (nonatomic, strong) UIButton *centerTabBarItem; //
+@property (nonatomic, strong) HBTabBarCenterItem *centerTabBarItem; //自定义中间按钮
 
 @end
 
@@ -57,9 +58,7 @@
         return;
     }
     //添加中间按钮
-    _centerTabBarItem = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_centerTabBarItem setImage:[UIImage imageNamed:@"tab_scan"] forState:UIControlStateNormal];
-    [_centerTabBarItem setImage:[UIImage imageNamed:@"tab_scan_pressed"] forState:UIControlStateSelected];
+    _centerTabBarItem = [HBTabBarCenterItem initializeTabBarCenterItem];
     [_centerTabBarItem addTarget:self action:@selector(centerTabBarItemDidClick) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_centerTabBarItem];
 }
