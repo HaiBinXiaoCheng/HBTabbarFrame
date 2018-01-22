@@ -23,23 +23,27 @@
     self = [super init];
     if (self) {
         _tabBarItemArr = tabBarItems;
+        [self initData];
         [self configUI];
     }
     return self;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)initData {
+    _barItemTitleColor_normal = [UIColor blackColor];
+    _barItemTitleColor_selected = [UIColor redColor];
 }
 
 - (void)configUI {
-    [self configChildVC];
+    
     //kvo形式添加自定义的 UITabBar
     HBTabBar *tab = [HBTabBar instanceCustomTabBarWithType:_tabBarItemArr.count+1 WithHasCenterItem:YES];
     tab.tabBarDelegate = self;
     [self setValue:tab forKey:@"tabBar"];
     //去除丑陋的分割线并设置背景色和分割线
     [tab changeBackGroundColor:[UIColor whiteColor] AndShaowImage:[UIImage imageNamed:@"tabbar_line"]];
+    
+    [self configChildVC];
 }
 
 - (void)configChildVC {
@@ -52,8 +56,9 @@
         // 设置子控制器的文字(可以设置tabBar和navigationBar的文字)
         childVC.tabBarItem.title = tabBarItem.tabTitle;
         // 设置文字的样式
-        [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor blackColor]} forState:UIControlStateNormal];
-        [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor redColor]} forState:UIControlStateSelected];
+        [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : _barItemTitleColor_normal} forState:UIControlStateNormal];
+        [childVC.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName : _barItemTitleColor_selected} forState:UIControlStateSelected];
+
         // 为子控制器包装导航控制器
         HBNavigationController *navigationVC = [[HBNavigationController alloc] initWithRootViewController:childVC];
         // 添加子控制器

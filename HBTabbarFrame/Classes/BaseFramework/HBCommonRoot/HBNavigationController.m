@@ -29,8 +29,20 @@
         /* 自动显示和隐藏tabbar */
         viewController.hidesBottomBarWhenPushed = YES;
     }
-    
     [super pushViewController:viewController animated:animated];
+}
+
+
+/**
+ 重写方法,使子控制器可以响应preferredStatusBarStyle方法
+
+ @return 当前导航控制器最上面的一个控制器
+ */
+- (UIViewController *)childViewControllerForStatusBarStyle {
+    return self.topViewController;
+}
+- (UIViewController *)childViewControllerForStatusBarHidden {
+    return self.topViewController;
 }
 
 /*

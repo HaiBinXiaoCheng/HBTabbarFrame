@@ -12,4 +12,7 @@
 
 - (instancetype)initWithTabBarItems:(NSArray *)tabBarItems;
 
+@property (nonatomic, strong) UIColor *barItemTitleColor_normal;    //tabBar文字未选中的颜色
+@property (nonatomic, strong) UIColor *barItemTitleColor_selected;  //tabBar文字选中的颜色
+
 @end

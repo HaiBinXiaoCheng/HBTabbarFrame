@@ -95,17 +95,6 @@
             CGFloat x = indexFromOrign * width;
             //如果是系统的UITabBarButton，那么就调整子控件位置，空出中间位置
             view.frame = CGRectMake(x, view.frame.origin.y, width, frame.size.height);
-            
-            //调整badge postion
-            for (UIView *badgeView in view.subviews){
-                NSString *className = NSStringFromClass([badgeView class]);
-                // Looking for _UIBadgeView
-                if ([className rangeOfString:@"BadgeView"].location != NSNotFound){
-                    badgeView.layer.transform = CATransform3DIdentity;
-                    badgeView.layer.transform = CATransform3DMakeTranslation(-17.0, 1.0, 1.0);
-                    break;
-                }
-            }
         }
     }
     

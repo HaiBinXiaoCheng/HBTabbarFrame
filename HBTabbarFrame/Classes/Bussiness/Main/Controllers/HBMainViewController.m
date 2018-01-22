@@ -18,10 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"哈哈哈哈哈";
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 35)];
     btn.backgroundColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    self.tabBarItem.badgeValue = @"99+";
 }
 
 - (void)btnAction {

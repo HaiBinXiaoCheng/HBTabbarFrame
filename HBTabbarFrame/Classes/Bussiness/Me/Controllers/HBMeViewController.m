@@ -22,6 +22,7 @@
     btn.backgroundColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    self.tabBarItem.badgeValue = @"6";
 }
 
 - (void)btnAction {

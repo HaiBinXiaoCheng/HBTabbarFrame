@@ -7,13 +7,15 @@
 //
 
 #import "HBViewController.h"
-//#import "HBDefines.h"
+#import "HBDefines.h"
 
 @interface HBViewController ()
 
 @property (nonatomic, strong) UILabel *titleLabel; //导航栏标题
 
 @end
+
+static const CGFloat titleFont = 18.0f; //导航title的font
 
 @implementation HBViewController {
     NSString *_title;
@@ -23,15 +25,14 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor cyanColor];
 }
-
-//- (void)setTitle:(NSString *)title {
-//    _title = title;
-//   self.titleLabel.text = title;
-//}
-//- (NSString *)title {
-//
-//    return _title ? : @"";
-//}
+//设置navigationItem的title
+- (void)setTitle:(NSString *)title {
+    _title = title;
+   self.titleLabel.text = title;
+}
+- (NSString *)title {
+    return _title ? : @"";
+}
 
 - (HBNetwork *)network {
     if (!_network) {
@@ -47,16 +48,25 @@
     return _HUD;
 }
 
-//- (UILabel *)titleLabel {
-//    if (!_titleLabel) {
-//        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kMAIN_SCREEN_WIDTH, 44)];
-//        _titleLabel.textColor = [UIColor blackColor];
-//        _titleLabel.font = [UIFont systemFontOfSize:18.0f];
-//        _titleLabel.textAlignment = NSTextAlignmentCenter;
-//        self.navigationItem.titleView = _titleLabel;
-//    }
-//    return _titleLabel;
-//}
+- (UILabel *)titleLabel {
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kMAIN_SCREEN_WIDTH, 44)];
+        _titleLabel.textColor = [UIColor blackColor];
+        _titleLabel.font = [UIFont systemFontOfSize:titleFont];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.navigationItem.titleView = _titleLabel;
+    }
+    return _titleLabel;
+}
+
+/**
+ 重写方法,子类重写可修改stateBar的颜色,调用setNeedsStatusBarAppearanceUpdate可刷新重新调用方法
+
+ @return 状态栏颜色
+ */
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleDefault;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
